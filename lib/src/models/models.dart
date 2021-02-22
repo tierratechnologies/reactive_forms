@@ -837,7 +837,7 @@ class FormControl<T> extends AbstractControl<T> {
   }
 
   /// Removes the provided [focusController] from the control.
-  void unregisterFocusController(FocusController focusController) {
+  void unregisterFocusController(FocusController? focusController) {
     if (_focusController != null && _focusController == focusController) {
       _focusController!.removeListener(_onFocusControllerChanged);
       _focusController = null;
@@ -852,7 +852,7 @@ class FormControl<T> extends AbstractControl<T> {
       return;
     }
 
-    unregisterFocusController(_focusController!);
+    unregisterFocusController(_focusController);
 
     _focusController = focusController;
     _focusController!.addListener(_onFocusControllerChanged);
