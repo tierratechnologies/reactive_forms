@@ -28,7 +28,9 @@ dependencies:
     path: ../
   intl: ^0.17.0
   reactive_forms_widgets: #^0.3.9
-
+    git:
+      url: git@github.com:tierratechnologies/reactive_forms_widgets.git
+      ref: updates-pkgs-for-null-safety
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
