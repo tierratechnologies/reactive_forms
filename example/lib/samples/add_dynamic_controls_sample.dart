@@ -6,12 +6,12 @@ class ViewModelProvider extends InheritedWidget {
   final NewContactViewModel viewModel;
 
   ViewModelProvider({
-    @required this.viewModel,
-    @required Widget child,
+    required this.viewModel,
+    required Widget child,
   }) : super(child: child);
 
   static NewContactViewModel of(BuildContext context) =>
-      context.findAncestorWidgetOfExactType<ViewModelProvider>()?.viewModel;
+      context.findAncestorWidgetOfExactType<ViewModelProvider>()!.viewModel;
 
   @override
   bool updateShouldNotify(covariant InheritedWidget oldWidget) => true;

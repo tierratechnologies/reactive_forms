@@ -11,6 +11,7 @@ class _DisableFormSampleState extends State<DisableFormSample> {
   Widget build(BuildContext context) {
     return SampleScreen(
       title: Text('Disable form sample'),
+      body: Text('body'),
     );
   }
 }

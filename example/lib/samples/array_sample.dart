@@ -57,7 +57,7 @@ class _ArraySampleState extends State<ArraySample> {
                                 .contacts
                                 .asMap()
                                 .keys
-                                .where(this.selectedContacts.value.elementAt)
+                                .where(this.selectedContacts.value!.elementAt)
                                 .map(this.contacts.elementAt);
                             print('Sent emails to: $selectedEmails');
                           }
@@ -82,8 +82,8 @@ class _ArraySampleState extends State<ArraySample> {
   }
 }
 
-Map<String, dynamic> _emptyAddressee(AbstractControl control) {
-  final emails = (control as FormArray<bool>).value;
+Map<String, dynamic>? _emptyAddressee(AbstractControl? control) {
+  final emails = (control as FormArray<bool>).value!;
   return emails.any((isSelected) => isSelected)
       ? null
       : <String, dynamic>{'emptyAddressee': true};

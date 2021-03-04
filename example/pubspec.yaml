@@ -27,10 +27,10 @@ dependencies:
   reactive_forms:
     path: ../
   intl: ^0.17.0
-  reactive_forms_widgets: #^0.3.9
-    git:
-      url: git@github.com:tierratechnologies/reactive_forms_widgets.git
-      ref: updates-pkgs-for-null-safety
+#  reactive_forms_widgets: #^0.3.9
+#    git:
+#      url: git@github.com:tierratechnologies/reactive_forms_widgets.git
+#      ref: updates-pkgs-for-null-safety
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -43,6 +43,9 @@ dev_dependencies:
 dependency_overrides:
   reactive_forms:
     path: ../
+
+#  reactive_forms_widgets:
+#    path: /Users/greg/Sandbox/reactive_forms_widgets
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

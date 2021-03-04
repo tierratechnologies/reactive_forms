@@ -13,7 +13,7 @@ class _DatePickerSampleState extends State<DatePickerSample> {
         'date': FormControl<DateTime>(value: null),
       });
 
-  FocusNode _focusNode;
+  late FocusNode _focusNode;
 
   @override
   initState() {
@@ -54,7 +54,7 @@ class _DatePickerSampleState extends State<DatePickerSample> {
                       _focusNode.canRequestFocus = false;
 
                       // clear field value
-                      picker.control.value = null;
+                      picker.control?.value = null;
 
                       //Enable the text field's focus node request after some delay
                       Future.delayed(Duration(milliseconds: 100), () {
